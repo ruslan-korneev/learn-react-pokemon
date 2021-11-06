@@ -27,6 +27,14 @@
     width: 242px;
     height: 21px;
 
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+
+
     font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
@@ -34,6 +42,8 @@
     line-height: 32px;
 
     color: #DD4343;
+    top: 2px;
+    left: 24px;
 }
 
 .poke-list-border {
@@ -53,6 +63,13 @@
     width: 242px;
     height: 21px;
 
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+
     font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
@@ -60,6 +77,8 @@
     line-height: 32px;
 
     color: #DD4343;
+    top: 2px;
+    left: 24px;
 }
 
 
@@ -81,6 +100,14 @@
     width: 58px;
     height: 21px;
 
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+
+
     font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
@@ -88,6 +115,8 @@
     line-height: 32px;
 
     color: #DD4343;
+    top: 2px;
+    left: 18px;
 }
 
 
@@ -116,5 +145,12 @@
     font-size: 24px;
     line-height: 32px;
 
-    color: #846E6E;
+    color: #cf1313;
+    top: 8px;
+    left: 54px;
+
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
 }
