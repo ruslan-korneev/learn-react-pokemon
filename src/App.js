@@ -1,6 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useEffect, useState } from "react";
+import NavBar from './components/layout/NavBar';
+import PokeCard from './components/pokemon/PokeCard';
 
 function App() {
   const BASE_URL = 'https://pokeapi.co/api/v2/pokemon'
@@ -30,21 +32,20 @@ function App() {
   }, [])
   
   return (
-    <div className="app-container">
-      <h1>Pokemon Evolution</h1>
-      <div className="pokemon-container">
+    <div className="all-components">
+      <NavBar/>
+      <div className="app-container">
+        <h1>Pokemon Evolution</h1>
         <div className="all-container">
 
         {allPokemons.map( (pokemonStats, index) => 
-         //   ${index}
-            //   pokemonStats.id
-            //   pokemonStats.sprites.other.dream_world.front_default
-            <h1>
-           
-              {pokemonStats.name}
-              </h1>
-              // pokemonStats.types[0].type.name
-            )}
+            <PokeCard
+              key={index}
+              id={pokemonStats.id}
+              image={pokemonStats.sprites.other.dream_world.front_default}
+              name={pokemonStats.name}
+              type={pokemonStats.types[0].type.name}
+            />)}
 
         </div>
         <button className="load-more" onClick={() => getAllPokemons()}>Load more</button>
